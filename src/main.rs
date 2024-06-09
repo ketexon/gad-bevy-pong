@@ -1,6 +1,6 @@
 use std::f32::consts::PI;
 
-use bevy::{input::keyboard, prelude::*, scene::ron::de, sprite::Mesh2dHandle, window::EnabledButtons};
+use bevy::{prelude::*, sprite::Mesh2dHandle, window::EnabledButtons};
 
 const WINDOW_SIZE: (f32, f32) = (512f32, 512f32);
 const PADDLE_SHAPE: Rectangle = Rectangle {
@@ -26,7 +26,6 @@ enum GameState {
     Serving,
     Started,
     RoundOver,
-    GameOver,
 }
 
 #[derive(Resource, Default)]
